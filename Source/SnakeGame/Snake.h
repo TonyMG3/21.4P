@@ -52,6 +52,9 @@ public:
 	void AddSnakeElement(int ElementsNum = 1);
 
 	void Move(float DeltaTime);
+	bool Moving;
+	
+	
 
 	UFUNCTION()
 	void SnakeElementOverlap(ASnakeElementBase* OverlappedElement, AActor* Other);

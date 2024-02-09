@@ -81,8 +81,9 @@ void ASnake::Move(float DeltaTime)
 	case EMovomentDirection::RIGHT:
 		MovementVector.Y -= ElementSize;
 		break;
+		
 	}
-	
+	Moving = false;
 	SnakeElements[0]->ToggleCollision();
 
 	for (int i = SnakeElements.Num() - 1; i > 0; i--) 
